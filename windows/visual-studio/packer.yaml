@@ -48,8 +48,10 @@ builders:
       team: "server"
     run_tags:
       circle_build_url: '{{ user "circle_build_url" }}'
+      team: "server"
     run_volume_tags:
       circle_build_url: '{{ user "circle_build_url" }}'
+      team: "server"
 
   - type: googlecompute
     image_name: windows-server-2019-vs2019-{{timestamp}}
